@@ -82,6 +82,8 @@ if __name__ == "__main__":
             webbrowser.open("google.com")
         elif 'open stackoverflow' in query:
             webbrowser.open("stackoverflow.com")
+        elif 'Hor kida' in query:
+            speak(f"Baas wadia apana suna")
         elif 'bol time' in query:
             speak(f"Mai Tere Pao di naukar nahi waa")
 
