@@ -33,7 +33,7 @@ def wishMe():
     else:
         speak("Good Evening!")
 
-    speak("sat shri aakaal, Mai Alexjot Kaur waa , Poch ki pushhna ")
+    speak("  sat shri aakaal, Mai Alexjot Kaur waa , Poch ki pushhna ")
     # speak(" Iam zira, how can i help you")
 
 def takeCommand():
@@ -74,6 +74,11 @@ if __name__ == "__main__":
 
 
 
+        elif 'time bol de' in query:
+            speak(f" Tere Paeo di naukar nahi waa, aappe dekh la")
+            
+            
+
         elif 'youtube khol' in query:
             webbrowser.open("youtube.com")
         elif 'Linkedin khol' in query:
@@ -84,8 +89,7 @@ if __name__ == "__main__":
             webbrowser.open("stackoverflow.com")
         elif 'Hor kida' in query:
             speak(f"Baas wadia apana suna")
-        elif 'bol time' in query:
-            speak(f"Mai Tere Pao di naukar nahi waa")
+        
 
 
        #Detects downloaded music and plays it
@@ -96,7 +100,7 @@ if __name__ == "__main__":
             os.startfile(os.path.join(music_dir, songs[0]))
 
         elif 'please time bol' in query:
-            strTime = datetime.datetime.now().strftime("%H:%M:%S")
+            strTime = datetime.datetime.now().strftime("%I:%M")
             speak(f"suun la time kaan khol ke {strTime} vaa")
 
 
