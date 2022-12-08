@@ -74,13 +74,13 @@ if __name__ == "__main__":
 
 
 
-        elif 'open youtube' in query:
+        elif 'youtube khol' in query:
             webbrowser.open("youtube.com")
-        elif 'open Linkedin' in query:
+        elif 'Linkedin khol' in query:
             webbrowser.open("LinkedIn.com")
-        elif 'open google' in query:
+        elif 'google khol' in query:
             webbrowser.open("google.com")
-        elif 'open stackoverflow' in query:
+        elif 'stackoverflow khol' in query:
             webbrowser.open("stackoverflow.com")
         elif 'Hor kida' in query:
             speak(f"Baas wadia apana suna")
