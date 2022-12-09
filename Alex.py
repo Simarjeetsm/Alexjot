@@ -4,12 +4,16 @@ import datetime
 import wikipedia #pip install wikipedia
 import webbrowser
 import os
-# from bs4 import BeautifulSoup
-# import requests
+from bs4 import BeautifulSoup
+import requests
+
+
+chrome_path=r'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'
+webbrowser.register('chrome',None, webbrowser.BackgroundBrowser(chrome_path))
 
 engine = pyttsx3.init('sapi5')
 rate = engine.getProperty("rate")
-engine.setProperty("rate", 140)
+engine.setProperty("rate", 135)
 
 #engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
@@ -80,20 +84,21 @@ if __name__ == "__main__":
             
 
         elif 'youtube khol' in query:
-            webbrowser.open("youtube.com")
+            webbrowser.get('chrome').open("youtube.com")
         elif 'Linkedin khol' in query:
-            webbrowser.open("LinkedIn.com")
+            webbrowser.get('chrome').open("LinkedIn.com")
         elif 'google khol' in query:
-            webbrowser.open("google.com")
-        elif 'stackoverflow khol' in query:
-            webbrowser.open("stackoverflow.com")
-        elif 'Hor kida' in query:
+            webbrowser.get('chrome').open("google.com")
+        elif 'stacko verflow khol' in query:
+            webbrowser.get('chrome').open("stackoverflow.com")
+            
+        elif 'kida wa' in query:
             speak(f"Baas wadia apana suna")
         
 
 
        #Detects downloaded music and plays it
-        elif 'play music' in query:
+        elif 'songs waja' in query:
             music_dir = 'D:\\songs'
             songs = os.listdir(music_dir)
             print(songs)
@@ -105,19 +110,23 @@ if __name__ == "__main__":
 
 
         #Opens python code editor
-        # elif 'python' in query:
-        #     codePath = "C:\\Users\\simar\\AppData\\Local\\Programs\\Python\\Python39\\python.exe"
-        #     os.startfile(codePath)
+        elif 'python khol' in query:
+            codePath = "C:\\Program Files\\JetBrains\\PyCharm Community Edition 2022.1\\bin\\pycharm64.exe"
+            os.startfile(codePath)
+            
+        elif 'vs code khol' in query:
+            codePath = "C:\\Users\\simar\\AppData\\Local\\Programs\\Microsoft VS Code\\code.exe"
+            os.startfile(codePath)
             
             
-        # elif "temperature" in query:
             
-        #     search = "temperature in jorhat"
-        #     url = f"https://www.google.com/search?q={search}"
-        #     r = requests.get(url)
-        #     data = BeautifulSoup(r.text, "html parser")
-        #     temp = data. find("div" "class_""Bleave").text
-        #     speak(f"current {search} is {temp}")
-
+        elif "temperature" in query:
+            
+            search = "temperature in jorhat"
+            url = f"https://www.google.com/search?q={search}"
+            r = requests.get(url)
+            data = BeautifulSoup(r.text,"html parser")
+            temp = data. find("div" "class_""Bleave").text
+            speak(f"current {search} is {temp}")
 
 
