@@ -4,8 +4,8 @@ import datetime
 import wikipedia #pip install wikipedia
 import webbrowser
 import os
-from bs4 import BeautifulSoup
-import requests
+# from bs4 import BeautifulSoup
+# import requests
 
 
 chrome_path=r'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'
