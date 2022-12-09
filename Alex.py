@@ -79,21 +79,27 @@ if __name__ == "__main__":
 
 
         elif 'time bol de' in query:
-            speak(f" Tere Paeo di naukar nahi waa, aappe dekh la")
+            speak(f" Tere Paeo di naukar nahi waa, aappe dekh la annea")
             
             
 
         elif 'youtube khol' in query:
             webbrowser.get('chrome').open("youtube.com")
+        elif 'open youtube' in query:
+            webbrowser.get('chrome').open("youtube.com")
+            
         elif 'Linkedin khol' in query:
             webbrowser.get('chrome').open("LinkedIn.com")
-        elif 'google khol' in query:
-            webbrowser.get('chrome').open("google.com")
-        elif 'stacko verflow khol' in query:
+        elif 'open Linkedin' in query:
+            webbrowser.get('chrome').open("LinkedIn.com")
+            
+        elif 'stack overflow khol' in query:
+            webbrowser.get('chrome').open("stackoverflow.com")
+        elif 'open stack overflow' in query:
             webbrowser.get('chrome').open("stackoverflow.com")
             
-        elif 'kida wa' in query:
-            speak(f"Baas wadia apana suna")
+        # elif 'hello' in query:
+        #     speak(f"Baass wadia, apana sunaa")
         
 
 
@@ -103,11 +109,19 @@ if __name__ == "__main__":
             songs = os.listdir(music_dir)
             print(songs)
             os.startfile(os.path.join(music_dir, songs[0]))
+        elif 'play music' in query:
+            music_dir = 'D:\\songs'
+            songs = os.listdir(music_dir)
+            print(songs)
+            os.startfile(os.path.join(music_dir, songs[0]))
+            
 
         elif 'please time bol' in query:
             strTime = datetime.datetime.now().strftime("%I:%M")
             speak(f"suun la time kaan khol ke {strTime} vaa")
-
+        elif 'the time' in query:
+            strTime = datetime.datetime.now().strftime("%H:%M:%S")
+            speak(f"Sir, the time is {strTime}")
 
         #Opens python code editor
         elif 'python khol' in query:
@@ -120,13 +134,13 @@ if __name__ == "__main__":
             
             
             
-        elif "temperature" in query:
+        # elif "temperature" in query:
             
-            search = "temperature in jorhat"
-            url = f"https://www.google.com/search?q={search}"
-            r = requests.get(url)
-            data = BeautifulSoup(r.text,"html parser")
-            temp = data. find("div" "class_""Bleave").text
-            speak(f"current {search} is {temp}")
+        #     search = "temperature in jorhat"
+        #     url = f"https://www.google.com/search?q={search}"
+        #     r = requests.get(url)
+        #     data = BeautifulSoup(r.text,"html parser")
+        #     temp = data. find("div" "class_""Bleave").text
+        #     speak(f"current {search} is {temp}")
 
 
