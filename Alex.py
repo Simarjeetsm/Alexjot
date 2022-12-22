@@ -18,8 +18,10 @@ engine.setProperty("rate", 135)
 #engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
 # print(voices[0].id)
-engine.setProperty('voice', voices[1].id)
+engine.setProperty('voice', voices[3].id)
 
+# for voice in voices:
+#     print(voice.id)
 
 def speak(audio):
     engine.say(audio)
