@@ -4,9 +4,6 @@ import datetime
 import wikipedia #pip install wikipedia
 import webbrowser
 import os
-# from bs4 import BeautifulSoup
-# import requests
-
 
 chrome_path=r'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'
 webbrowser.register('chrome',None, webbrowser.BackgroundBrowser(chrome_path))
@@ -133,16 +130,5 @@ if __name__ == "__main__":
         elif 'vs code khol' in query:
             codePath = "C:\\Users\\simar\\AppData\\Local\\Programs\\Microsoft VS Code\\code.exe"
             os.startfile(codePath)
-            
-            
-            
-        # elif "temperature" in query:
-            
-        #     search = "temperature in jorhat"
-        #     url = f"https://www.google.com/search?q={search}"
-        #     r = requests.get(url)
-        #     data = BeautifulSoup(r.text,"html parser")
-        #     temp = data. find("div" "class_""Bleave").text
-        #     speak(f"current {search} is {temp}")
 
 
