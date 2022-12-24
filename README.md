@@ -3,9 +3,9 @@ Lets make some Fun AI 😁
 
 # Packages to be installed 🧐
 
-pip install pyttsx3
-pip install speechRecognition
-pip install wikipedia
+1. pip install pyttsx3
+2. pip install speechRecognition
+3. pip install wikipedia
 
 Pip install pyaudio
 
@@ -26,6 +26,9 @@ And download the pyaudio module according to your Python Version ( Recommended t
 Steps to install Python module[Unofficial]
 1. Hold shift and Right click to open powershell option.
 2. TYPE - [ pip install ./( type the module full name ) ] OR Press tab to auto complete 😀
+
+
+
 
 
 # Toh Chaliye Shuru Karte hai 😜
