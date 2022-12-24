@@ -12,6 +12,7 @@ Pip install pyaudio
 
 # Pyaudio installation error
 
+Use TERMINAL to install packages
 If the Pyaudio show any error while Installing, try this two steps -
 
 1. pip install pipwin
