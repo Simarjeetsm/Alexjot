@@ -24,6 +24,10 @@ If the problem still arise, then GO TO ( https://www.lfd.uci.edu/~gohlke/pythonl
 
 And download the pyaudio module according to your Python Version ( Recommended to Download 32bit version )
 
+Check Python version-
+You can use CMD or POWERSHELL ( Apni marzi 😎 )
+Type [ python --version ] ( It will Print the version of Python installed in your Device )
+
 Steps to install Python module[Unofficial]
 1. Hold shift and Right click to open powershell option.
 2. TYPE - [ pip install ./( type the module full name ) ] OR Press tab to auto complete 😀
