@@ -25,9 +25,7 @@ And download the pyaudio module according to your Python Version ( Recommended t
 
 Steps to install Python module[Unofficial]
 1. Hold shift and Right click to open powershell option.
-2. TYPE - pip install ./( type the module full name )
-                                OR
-                    Press tab to auto complete 😀
+2. TYPE - [ pip install ./( type the module full name ) ] OR Press tab to auto complete 😀
 
 
 # Toh Chaliye Shuru Karte hai 😜
