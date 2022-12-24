@@ -7,7 +7,7 @@ Lets make some Fun AI 😁
 2. pip install speechRecognition
 3. pip install wikipedia
 
-Pip install pyaudio
+4. Pip install pyaudio
 
 
 # Pyaudio installation error
