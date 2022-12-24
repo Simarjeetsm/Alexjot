@@ -10,7 +10,7 @@ Lets make some Fun AI 😁
 4. Pip install pyaudio
 
 
-# Pyaudio installation error
+# Pyaudio installation error 🤔
 
 Use TERMINAL to install packages-                                                                                                                  
                                                                                                                                                 
