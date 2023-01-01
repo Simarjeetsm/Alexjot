@@ -45,7 +45,7 @@ def takeCommand():
     r = sr.Recognizer()
     with sr.Microphone() as source:
         print("Listening...")
-        r.pause_threshold = 1
+        r.pause_threshold = 0.5
         audio = r.listen(source)
 
     try:
@@ -88,31 +88,36 @@ if __name__ == "__main__":
             webbrowser.get('chrome').open("youtube.com")
             
         elif 'Linkedin khol' in query:
-            webbrowser.get('chrome').open("LinkedIn.com")
+            webbrowser.get('chrome').open("linkedin.com")
         elif 'open Linkedin' in query:
-            webbrowser.get('chrome').open("LinkedIn.com")
+            webbrowser.get('chrome').open("linkedin.com")
             
         elif 'stack overflow khol' in query:
             webbrowser.get('chrome').open("stackoverflow.com")
         elif 'open stack overflow' in query:
             webbrowser.get('chrome').open("stackoverflow.com")
             
-        # elif 'hello' in query:
-        #     speak(f"Baass wadia, apana sunaa")
+        elif 'twitter khol' in query:
+            webbrowser.get('chrome').open("twitter.com")
+        elif 'open twitter' in query:
+            webbrowser.get('chrome').open("twitter.com")
+            
+        elif 'hello' in query:
+             speak(f"chal chal , apna kaam kar daammag naa khaa")
         
 
 
        #Detects downloaded music and plays it
-        elif 'songs waja' in query:
+        elif 'gane' in query:
             music_dir = 'D:\\songs'
             songs = os.listdir(music_dir)
             print(songs)
-            os.startfile(os.path.join(music_dir, songs[0]))
+            os.startfile(os.path.join(music_dir, songs[1]))
         elif 'play music' in query:
             music_dir = 'D:\\songs'
             songs = os.listdir(music_dir)
             print(songs)
-            os.startfile(os.path.join(music_dir, songs[0]))
+            os.startfile(os.path.join(music_dir, songs[1]))
             
 
         elif 'please time bol' in query:
