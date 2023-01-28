@@ -24,7 +24,7 @@ def speak(audio):
     engine.say(audio)
     engine.runAndWait()
 
-#   Uses to with according to time
+#   Uses to wish according to time
 
 def wishMe():
     hour = int(datetime.datetime.now().hour)
