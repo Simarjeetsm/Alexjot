@@ -10,7 +10,7 @@ webbrowser.register('chrome',None, webbrowser.BackgroundBrowser(chrome_path))
 
 engine = pyttsx3.init('sapi5')
 rate = engine.getProperty("rate")
-engine.setProperty("rate", 135)
+engine.setProperty("rate", 105)
 
 #engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
@@ -105,6 +105,11 @@ if __name__ == "__main__":
             
         elif 'hello' in query:
              speak(f"chal chal , apna kaam kar daammag naa khaa")
+             
+             
+    #  Some random shit
+        elif 'what is today' in query:
+             speak(f" ha Pancho Friday hega lekin mai Gaal nahi kadni, thora parivarik mahol hega")
         
 
 
